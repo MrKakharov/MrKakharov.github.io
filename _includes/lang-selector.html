@@ -1,5 +1,5 @@
 {% comment %}
-<!-- 라디오 버튼 버전 -->
+<!-- language drop down style -->
 <style>
 .lang-selector {
     display: flex;
@@ -65,8 +65,8 @@ function changeLang(url) {
         <option value="{% if lang == site.default_lang %}{{ page.url }}{% else %}/{{ lang }}{{ page.url }}{% endif %}"
                 {% if lang == site.active_lang %}selected{% endif %}>
             {% case lang %}
-            {% when 'uz' %}uz Oʻzbek
-            {% when 'ru' %}ru Русский
+            {% when 'uz' %}🇺🇿 Oʻzbek
+            {% when 'ru' %}🇷🇺 Русский
             {% when 'ko' %}🇰🇷 한국어
             {% when 'en' %}🇺🇸 English
             {% when 'ja' %}🇯🇵 日本語
